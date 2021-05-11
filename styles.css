@@ -24,9 +24,12 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration-thickness: 2px;
     color: inherit;
+}
 
+a:hover {
+    transform: scale(2);
 }
 
 a:focus {
@@ -83,8 +86,7 @@ h1 {
     animation: gradient 15s infinite;
 }
 
-h1:hover, 
-h2:hover {
+h1:hover {
     cursor: url(./assets/moon.png), auto; /* https://icons8.com/icon/46373/moon-and-stars */
 }
 
@@ -95,6 +97,12 @@ h2 {
     font-size: 3rem;
     font-family: 'Josefin Sans', monospace;
     font-weight: 100;
+}
+
+h2 a:hover, 
+h2 a:focus {
+    background: rgb(190, 142, 212, 0.3);
+    color: rgb(241, 224, 200);
 }
 
 *::selection {
@@ -134,7 +142,7 @@ i {
     
 }
 
-i:hover {
+i:hover, a:hover {
     cursor: url(./assets/hand.png), auto;
     transform: scale(1.5) rotate(10deg);
 }
