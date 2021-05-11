@@ -1,0 +1,227 @@
+
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* // remove all styling // */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, 
+ol, 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+a:focus {
+    outline: none;
+}
+
+input, 
+button {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+/* // 10px base font // */
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+/* // ------------------- // */
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#particles-js {
+    height: 100vh;
+    overflow: hidden;
+    cursor: url(./assets/cursor.png), auto;
+    background-color: rgb(26, 24, 32);
+}
+
+header {
+    position: absolute;
+    bottom: 10vw;
+    right: 13vw;
+    z-index: 50;
+    color: rgb(241, 224, 200);
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    text-align: right;
+}
+
+h1 {
+    font-size: 10rem;
+    margin: 0 -19px 0 0;
+    font-family: 'Amatic SC', serif;
+    letter-spacing: 9px;
+    animation: gradient 15s infinite;
+}
+
+h1:hover, 
+h2:hover {
+    cursor: url(./assets/moon.png), auto; /* https://icons8.com/icon/46373/moon-and-stars */
+}
+
+
+h2 {
+    width: 100%;
+    text-align: right;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', monospace;
+    font-weight: 100;
+}
+
+*::selection {
+    background: rgb(241, 224, 200);
+    color: rgb(4, 4, 5);
+}
+
+h1::selection {
+    color: rgb(26, 24, 32);
+}
+    
+span {
+    font-style: italic;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    font-size: 3.7rem;
+    margin: 30px 45px 0 0 ;
+}
+
+li:last-child {
+    margin: 30px 0;
+}
+
+li, 
+a {
+    padding: 0;
+}
+
+i {
+    transition: transform 300ms linear;
+    
+}
+
+i:hover {
+    cursor: url(./assets/hand.png), auto;
+    transform: scale(1.5) rotate(10deg);
+}
+
+.backwards i:hover {
+    transform: scale(1.5) rotate(-10deg);
+}
+
+a:focus, 
+a:active {
+    color: rgb(190, 142, 212, 0.8);
+}
+
+@media(max-width: 850px) {
+    h1 {
+        font-size: 7rem;
+        letter-spacing: 7px;
+        margin-right: -14px;
+    }
+    h2 {
+        font-size: 2.7rem;
+    }
+    li {
+        margin: 25px 33px 0 0;
+    }
+    li:last-child {
+        margin: 25px 0 0;
+    }
+    header {
+        bottom: 13vw;
+    }
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 5.5rem;
+        margin-right: -12px;
+    }
+    header {
+        width: 330px;
+        height: 100px;
+        bottom: 50%;
+        right: 50%;
+        margin: 0 -165px -50px 0;
+    }
+
+    .grid {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+@keyframes gradient {
+    0% {
+        color: rgb(241, 224, 200);
+    }
+    13% {
+        color: rgb(241, 224, 200, 0.8);
+    }
+    23% {
+        color: rgba(232, 241, 200, 0.7);
+    }
+    30% {
+        color: rgba(200, 241, 225, 0.7);
+    }
+    40% {
+        color: rgba(200, 223, 241, 0.7);
+    }
+    50% {
+        color: rgba(204, 200, 241, 0.7);
+    }
+    60% {
+        color: rgba(225, 200, 241, 0.7);
+    }
+    70% {
+        color: rgba(241, 200, 217, 0.7);
+    }
+    80% {
+        color: rgba(241, 205, 200, 0.7);
+    }
+    90% {
+        color: rgb(241, 224, 200, 0.8);
+    }
+    0% {
+        color: rgb(241, 224, 200);
+    }
+}
