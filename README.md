@@ -1,6 +1,6 @@
 # Hi!
 
-<p>Check out my website at www.cecilezhang.com ☺</p>
+<p>Come visit me at www.cecilezhang.com ☺</p>
 
 ## License
 
